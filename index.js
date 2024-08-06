@@ -13,7 +13,7 @@ app.use(express.static('public'));
 
 app.use(router);
 
-const PORT = process.env.PORT || 1234;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Listening at http://localhost:${PORT}`);
 });
