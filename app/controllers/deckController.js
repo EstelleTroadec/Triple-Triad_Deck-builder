@@ -43,6 +43,24 @@ const deckController = {
         }
     },
 
+    removeCard: (req, res) => {
+        // get the id from the url
+        // parseInt = convert a string to an integer
+        // 10 = make sure it's in a decimal base
+        const cardId = parseInt(req.params.id, 10);
+
+        // create a new array without the card with the given id
+        const newDeck = req.session.deck.filter((card) => { 
+            return card.id !== parseInt(cardId, 10);
+        });
+
+        // replace the old deck with the new one
+        req.session.deck = newDeck;
+        res.redirect('/deck');
+        
+    
+    },
+
     deckPage: (req, res) => {
         res.render('cardList', 
             {
