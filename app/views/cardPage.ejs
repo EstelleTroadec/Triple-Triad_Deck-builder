@@ -10,8 +10,19 @@
         </a>
         <a class="link--addCard" title="Ajouter au deck" href="#">[ + ]</a>
       </div>
-  
-  </div>
+</div>
+<div class="details">
+  <p><span>Élément :</span> <%= card.element || 'aucun' %></p>
+  <p><span>Niveau :</span> <%= card.level %></p>
+  <div class="values">
+    <p><span>Valeurs :</span></p>
+    <ul>
+      <li>Nord : <%= card.value_north %></li>
+      <li>Est : <%= card.value_east %></li>
+      <li>Sud : <%= card.value_south %></li></li>
+      <li>Ouest : <%= card.value_west %></li>
+    </ul>
+</div>
 
 <%- include('./partials/footer') %>
 

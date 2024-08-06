@@ -89,3 +89,28 @@ h2 {
   font-weight: bold;
   padding: 10px;
 }
+
+.details {
+  width: 20%;
+  margin: auto;
+}
+
+.details span {
+  font-weight: bold;
+}
+
+.details p {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.details ul {
+  font-size: 1.1em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.details li {
+  list-style: circle;
+  padding: 10px;
+}
