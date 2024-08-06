@@ -5,8 +5,8 @@ const cardController = {
     cardPage: async (req, res) => {
 
         // get the id from the url
-        // parseInt = converts a string to an integer
-        // 10 = makes sure it's in a decimal base
+        // parseInt = convert a string to an integer
+        // 10 = make sure it's in a decimal base
         const cardId = parseInt(req.params.id, 10);
 
         try {
