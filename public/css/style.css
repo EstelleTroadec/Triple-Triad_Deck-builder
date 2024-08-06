@@ -79,6 +79,16 @@ form {
   text-decoration: none;
 }
 
+.card .link--removeCard {
+  position: absolute;
+  top: 20%;
+  right: 24%;
+  color: red;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
 
 .footer {
   text-align: center;
