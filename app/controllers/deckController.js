@@ -1,3 +1,4 @@
+const dataMapper = require('../dataMapper');
 
 const deckController = {
 
@@ -32,7 +33,7 @@ const deckController = {
 
                     }
                 } catch(error) {
-                    consolre.error(error);
+                    console.error(error);
                     res.status(500).render('error');
                 }
             } else {
