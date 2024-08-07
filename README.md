@@ -14,11 +14,9 @@ Parmi les fonctionnalités mises en place, il est possible de :
 
 ## Technologies utilisées
 
-### Langages
-
 - Node.js
 - Express
-- Ejs
+- EJS
 - PostgreSQL
 
 ### Outils
