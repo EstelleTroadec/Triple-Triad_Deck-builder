@@ -49,6 +49,21 @@ const dataMapper = {
 
     // return the result
     return result.rows;
+  },
+
+  async getCardsByLevel(level) {
+    const query = {
+      // select all the fields of the cards with the given level
+      text: 'SELECT * FROM card WHERE level = $1',
+      // array with the values to be used in the query (instead of $1)
+      values: [level],
+    }
+
+    // execute the previous query, using the client
+    const result = await client.query(query);
+
+    // return the result
+    return result.rows;
   }
 };
 
