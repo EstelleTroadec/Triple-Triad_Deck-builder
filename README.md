@@ -2,7 +2,7 @@
 
 ## Description
 
-Inspiré du jeu de plateau Triple Triad (inventé par SquareEnix et présent dans Final Fantasy 8), ce projet est une application web développée à titre d'exercice dans le cadre d'une formation de développeur.
+Inspiré du jeu de plateau Triple Triad (inventé par SquareEnix et présent dans Final Fantasy 8), ce projet est une application web développée à titre d'exercice dans le cadre d'une formation de développeur et web mobile.
 
 L'objectif était de manipuler des bases de données : de la création d'une base de données avec PostgreSQL jusqu'à la mise en place de diverses fonctionnalités utilisant ces données.
 
