@@ -22,7 +22,7 @@
 
 <h3>Par Niveau</h3>
 <form action="/search/level" method="get">
-  <label for="level">Niveau</label>
+  <label for="level">Niveau :</label>
   <input type="number" name="level" id="level" min=0 max=10 value=0>
 
   <input type="submit" value="Chercher">
@@ -32,7 +32,7 @@
 
 <h3>Par valeur</h3>
 <form action="/search/values" method="get">
-  <label for="direction">Direction</label>
+  <label for="direction">Direction :</label>
   <select name="direction" id="direction">
     <option value="north">Nord</option>
     <option value="east">Est</option>
@@ -40,7 +40,7 @@
     <option value="west">Ouest</option>
   </select>
   
-  <label for="value">Valeur</label>
+  <label for="value">Valeur minimale :</label>
   <input type="number" name="value" id="value" min=0 max=10 value=0>
 
   <input type="submit" value="Chercher">

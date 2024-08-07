@@ -38,10 +38,12 @@
   font-size: 1.3em;
   font-weight: bold;
   margin-left: 3rem;
+  margin-top: 1em;
 }
 
 form {
-  margin-left: 3rem;
+  margin: 1em 0em 2em 3em;
+
 }
 
 
