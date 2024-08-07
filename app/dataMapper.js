@@ -78,9 +78,22 @@ const dataMapper = {
     };
 
     const result = await client.query(query);
-
     return result.rows;
   },
+
+  async getCardsByName(name) {
+    const query = {
+      // select all the cards with a given part of the name
+      // we use ILIKE to make sure the search is not case-sensitive
+      text: 'SELECT * FROM card WHERE name ILIKE $1',
+      // array with the values to be used in the query (instead of $1)
+      // we need to add % at the beginning and the end of the value so that we can look for cards which name includes the given name
+      values: [`%${name}%`],
+    }
+
+    const result = await client.query(query);
+    return result.rows;
+  }
 };
 
 

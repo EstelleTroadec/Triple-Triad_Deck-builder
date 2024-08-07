@@ -57,7 +57,23 @@ const searchController = {
       console.error(error);
       res.status(500).send(`An error occured with the database : ${error}`);
     }
-  }
+  },
+
+  searchByName: async (req,res) => {
+
+    // get the name from the queryString
+    const name = req.query.name;
+    try {
+      const cards = await dataMapper.getCardsByName(name);
+
+      // render the cardList view with a different title accordingly to the search
+      const title = 'Liste des cartes contenant ' + name;
+      res.render('cardList', {cards, title});
+    } catch (error) {
+      console.error(error);
+      res.status(500).send(`An error occured with the database : ${error}`);
+    }
+  },
 
 };
 
