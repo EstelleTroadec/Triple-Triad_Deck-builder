@@ -64,7 +64,23 @@ const dataMapper = {
 
     // return the result
     return result.rows;
-  }
+  },
+
+  async getCardsByValue(direction, value) {
+    // select all the cards with the given direction AND with at least the indicated value
+    const query = {
+      text: `SELECT * FROM card 
+      WHERE $1 = 'north' AND value_north >= $2 
+      OR $1 = 'east' AND value_east >= $2 
+      OR $1 = 'south' AND value_south >= $2 
+      OR $1 = 'west' AND value_west >= $2`,
+      values: [direction, value],
+    };
+
+    const result = await client.query(query);
+
+    return result.rows;
+  },
 };
 
 

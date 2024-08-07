@@ -13,6 +13,7 @@ router.get('/card/:id', cardController.cardPage);
 router.get('/search', searchController.searchPage);
 router.get('/search/element', searchController.searchByElement);
 router.get('/search/level', searchController.searchByLevel);
+router.get('/search/values', searchController.searchByValue);
 
 router.get('/deck/add/:id', deckController.addCard);
 router.get('/deck', deckController.deckPage);
