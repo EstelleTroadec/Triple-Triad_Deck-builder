@@ -59,6 +59,7 @@ cd nomDuDepot && code .
 
 # pour créer votre bdd
 `CREATE USER your_username WITH PASSWORD 'your_password';`
+puis
 `CREATE DATABASE your_database OWNER your_username;`
 ```
 
@@ -91,4 +92,4 @@ npm run dev
 
 #### Ouvrez le projet dans un navigateur
 
-Une fois le serveur démarré, rendez-vous dans votre navigateur préféré à l'adresse http://localhost:3000 (ou au port que vous avez configuré dans votre fichier .env) pour voir le rendu visuel et interragir avec le site.
+Une fois le serveur démarré, rendez-vous dans votre navigateur préféré à l'adresse http://localhost:5000 (ou au port que vous avez configuré dans votre fichier .env) pour voir le rendu visuel et interragir avec le site.
